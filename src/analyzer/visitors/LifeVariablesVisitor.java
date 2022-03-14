@@ -78,7 +78,23 @@ public class LifeVariablesVisitor implements ParserVisitor {
     @Override
     public Object visit(ASTStmt node, Object data) {
         // TODO: Définition des statements, cette fonction est importante pour l'identification des "step".
-        node.childrenAccept(this, previous_step);
+        StepStatus status = new StepStatus();
+        String step_id = genStep();
+        this.allSteps.put(step_id,status);
+
+        // si previous set >1
+        for (String previous_step:this.previous_step) {
+            this.allSteps.get(previous_step).SUCC.add(step_id);
+        }
+        this.allSteps.get(step_id).PRED.addAll(previous_step);
+
+        this.previous_step.clear();
+        HashSet<String> me = new HashSet<>();
+        me.add(step_id);
+        node.childrenAccept(this, me);
+
+        //this.previous_step.clear();
+        this.previous_step.add(step_id);
         return null;
     }
 
@@ -89,7 +105,25 @@ public class LifeVariablesVisitor implements ParserVisitor {
     public Object visit(ASTIfStmt node, Object data) {
         // TODO: Cas IfStmt.
         //  Attention au cas de "if cond stmt" (sans else) qui est la difficulté ici...
-        node.childrenAccept(this, data);
+        HashSet<String> previous_steps = (HashSet<String>) data;
+        this.current_ref_ids.clear();
+
+
+        node.jjtGetChild(0).jjtAccept(this,data);
+        for (String step:previous_steps) this.allSteps.get(step).REF.addAll(this.current_ref_ids);
+        this.current_ref_ids.clear();
+
+
+
+        this.previous_step.addAll(previous_steps);
+        node.jjtGetChild(1).jjtAccept(this,data);
+
+        if(node.jjtGetNumChildren()>2){
+            this.previous_step.addAll(previous_steps);
+            node.jjtGetChild(2).jjtAccept(this,data);
+            String false_path_step_id = (String) previous_steps.toArray()[0];
+        }
+
         return null;
     }
 
@@ -97,8 +131,14 @@ public class LifeVariablesVisitor implements ParserVisitor {
     public Object visit(ASTWhileStmt node, Object data) {
         // TODO: Cas WhileStmt.
         //  Attention au cas de la condition qui est la difficulté ici...
+        HashSet<String> previousStep = (HashSet<String>) data;
+        this.current_ref_ids.clear();
 
-        node.childrenAccept(this, data);
+        node.jjtGetChild(0).jjtAccept(this,data);
+        for (String step:previousStep) this.allSteps.get(step).REF.addAll(this.current_ref_ids);
+        this.current_ref_ids.clear();
+
+        node.jjtGetChild(1).jjtAccept(this,data);
         return null;
     }
 
@@ -106,10 +146,17 @@ public class LifeVariablesVisitor implements ParserVisitor {
     @Override
     public Object visit(ASTAssignStmt node, Object data) {
         // TODO: vous avez le cas "DEF" ici... conseil: c'est ici qu'il faut faire ça ;)
-        for(int i=0; i < node.jjtGetNumChildren(); i++ ) {
-            node.jjtGetChild(i).jjtAccept(this,data);
-        }
-        return null;
+        HashSet<String> previousStep = (HashSet<String>) data;
+        this.current_ref_ids.clear();
+
+        node.jjtGetChild(0).jjtAccept(this,data);
+        for (String step:previousStep) this.allSteps.get(step).DEF.addAll(this.current_ref_ids);
+        this.current_ref_ids.clear();
+
+       node.jjtGetChild(1).jjtAccept(this,data);
+       for (String step:previousStep) this.allSteps.get(step).REF.addAll(this.current_ref_ids);
+       this.current_ref_ids.clear();
+       return null;
     }
 
     @Override
@@ -167,6 +214,7 @@ public class LifeVariablesVisitor implements ParserVisitor {
     @Override
     public Object visit(ASTIdentifier node, Object data) {
         // TODO: Ici on a accès au nom des variables
+        this.current_ref_ids.add(node.getValue());
         node.childrenAccept(this, data);
         return null;
     }
@@ -238,6 +286,25 @@ public class LifeVariablesVisitor implements ParserVisitor {
      * Cfr. Algo du cours
      */
     private void compute_IN_OUT() {
-        // TODO
+        Stack<String> work_list = new Stack<>();
+        work_list.addAll(previous_step);
+
+        while (!work_list.empty()){
+            String node = work_list.pop();
+            StepStatus node_status = this.allSteps.get(node);
+            for (String succ_node:node_status.SUCC) {
+                StepStatus succ_node_status = this.allSteps.get(succ_node);
+                node_status.OUT.addAll(succ_node_status.IN);
+            }
+            HashSet<String> OLD_IN = (HashSet<String>) node_status.IN.clone();
+            node_status.IN = (HashSet<String>) node_status.OUT.clone();
+            node_status.IN.removeAll(node_status.DEF);
+            node_status.IN.addAll(node_status.REF);
+
+            if(!node_status.IN.equals(OLD_IN)){
+                for (String predNode: node_status.PRED)
+                    work_list.push(predNode);
+            }
+        }
     }
 }
