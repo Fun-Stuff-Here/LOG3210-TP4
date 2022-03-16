@@ -11,40 +11,40 @@ REF : [a]
 DEF : []
 IN  : [a, c, d, e]
 OUT : [a, c, d, e]
-SUCC: [_step2, _step4, _step6]
+SUCC: [_step2, _step3, _step4, _step5]
 PRED: [_step0]
 
 ===== STEP 2 ===== 
 REF : [a, c]
 DEF : [b]
 IN  : [a, c, d, e]
-OUT : [a, c, d, e]
-SUCC: [_step3]
+OUT : [c, d, e]
+SUCC: [_step3, _step6, _step7]
 PRED: [_step1]
 
 ===== STEP 3 ===== 
 REF : [d]
 DEF : [d]
-IN  : [a, c, d, e]
-OUT : [a, c, d, e]
-SUCC: [_step4]
-PRED: [_step2]
+IN  : [c, d, e]
+OUT : [c, d, e]
+SUCC: [_step6, _step7]
+PRED: [_step1, _step2]
 
 ===== STEP 4 ===== 
 REF : [a]
 DEF : [b]
 IN  : [a, c, d, e]
 OUT : [c, d, e]
-SUCC: [_step5]
-PRED: [_step1, _step3]
+SUCC: [_step5, _step6, _step7]
+PRED: [_step1]
 
 ===== STEP 5 ===== 
 REF : [e]
 DEF : [e]
 IN  : [c, d, e]
 OUT : [c, d, e]
-SUCC: [_step6]
-PRED: [_step4]
+SUCC: [_step6, _step7]
+PRED: [_step1, _step4]
 
 ===== STEP 6 ===== 
 REF : [c]
@@ -52,7 +52,7 @@ DEF : [a]
 IN  : [c, d, e]
 OUT : [d, e]
 SUCC: [_step7]
-PRED: [_step1, _step5]
+PRED: [_step2, _step3, _step4, _step5]
 
 ===== STEP 7 ===== 
 REF : [d, e]
@@ -60,5 +60,5 @@ DEF : [b]
 IN  : [d, e]
 OUT : []
 SUCC: []
-PRED: [_step6]
+PRED: [_step2, _step3, _step4, _step5, _step6]
 

@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt4.txt" afterDir="false" />
@@ -135,23 +134,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LifeVariablesTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Template" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="analyzer.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="analyzer.tests" />
-      <option name="MAIN_CLASS_NAME" value="analyzer.tests.LifeVariablesTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="[.\test-suite\LifeVariablesTest\data\whilestmt1.txt]" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LifeVariablesTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Template" />
       <extension name="coverage">
@@ -164,6 +146,23 @@
       <option name="MAIN_CLASS_NAME" value="analyzer.tests.LifeVariablesTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="[.\test-suite\LifeVariablesTest\data\assign3.txt]" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LifeVariablesTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="analyzer.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="analyzer.tests" />
+      <option name="MAIN_CLASS_NAME" value="analyzer.tests.LifeVariablesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="[.\test-suite\LifeVariablesTest\data\ifstmt2.txt]" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,16 +220,16 @@
       <item itemvalue="JUnit.All in Template" />
       <item itemvalue="JUnit.LifeVariablesTest" />
       <item itemvalue="JUnit.LifeVariablesTest (1)" />
-      <item itemvalue="JUnit.LifeVariablesTest (2)" />
       <item itemvalue="JUnit.LifeVariablesTest (3)" />
+      <item itemvalue="JUnit.LifeVariablesTest (4)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Template" />
+        <item itemvalue="JUnit.LifeVariablesTest (4)" />
         <item itemvalue="JUnit.LifeVariablesTest (1)" />
         <item itemvalue="JUnit.LifeVariablesTest (3)" />
         <item itemvalue="JUnit.LifeVariablesTest" />
-        <item itemvalue="JUnit.LifeVariablesTest (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +247,8 @@
       <workItem from="1647230052113" duration="796000" />
       <workItem from="1647231888489" duration="4595000" />
       <workItem from="1647261947039" duration="15000" />
-      <workItem from="1647262919243" duration="7996000" />
+      <workItem from="1647262919243" duration="8590000" />
+      <workItem from="1647386738793" duration="5485000" />
     </task>
     <servers />
   </component>

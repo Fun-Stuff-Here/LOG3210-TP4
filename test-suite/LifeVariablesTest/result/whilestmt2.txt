@@ -3,15 +3,15 @@ REF : [b]
 DEF : [a]
 IN  : [b, c]
 OUT : [a, b, c]
-SUCC: [_step1]
+SUCC: [_step1, _step2, _step3]
 PRED: []
 
 ===== STEP 1 ===== 
 REF : [a]
 DEF : []
 IN  : [a, b, c]
-OUT : [b, c]
-SUCC: [_step3]
+OUT : [a, b, c]
+SUCC: [_step2, _step3]
 PRED: [_step0]
 
 ===== STEP 2 ===== 
@@ -20,7 +20,7 @@ DEF : [a]
 IN  : [a, b, c]
 OUT : [b, c]
 SUCC: [_step3]
-PRED: []
+PRED: [_step0, _step1]
 
 ===== STEP 3 ===== 
 REF : [b, c]
@@ -28,5 +28,5 @@ DEF : [a]
 IN  : [b, c]
 OUT : []
 SUCC: []
-PRED: [_step1, _step2]
+PRED: [_step0, _step1, _step2]
 

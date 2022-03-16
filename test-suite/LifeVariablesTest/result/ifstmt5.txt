@@ -3,7 +3,7 @@ REF : [c]
 DEF : []
 IN  : [b, c]
 OUT : [b]
-SUCC: [_step1, _step3]
+SUCC: [_step1]
 PRED: []
 
 ===== STEP 1 ===== 
@@ -11,7 +11,7 @@ REF : [b]
 DEF : []
 IN  : [b]
 OUT : [b]
-SUCC: [_step2, _step3]
+SUCC: [_step2]
 PRED: [_step0]
 
 ===== STEP 2 ===== 
@@ -28,5 +28,5 @@ DEF : [c]
 IN  : [b]
 OUT : []
 SUCC: []
-PRED: [_step0, _step1, _step2]
+PRED: [_step2]
 
