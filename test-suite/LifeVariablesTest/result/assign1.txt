@@ -1,26 +1,26 @@
 ===== STEP 0 ===== 
 REF : [a]
 DEF : [b]
-IN  : [a, c, d, e]
-OUT : [b, c, d, e]
-SUCC: [_step1, _step2, _step3, _step4]
+IN  : [a]
+OUT : [b]
+SUCC: [_step1]
 PRED: []
 
 ===== STEP 1 ===== 
 REF : [b]
 DEF : [c]
-IN  : [b, d, e]
-OUT : [c, d, e]
-SUCC: [_step2, _step3, _step4]
+IN  : [b]
+OUT : [c]
+SUCC: [_step2]
 PRED: [_step0]
 
 ===== STEP 2 ===== 
 REF : [c]
 DEF : [d]
-IN  : [c, e]
-OUT : [d, e]
-SUCC: [_step3, _step4]
-PRED: [_step0, _step1]
+IN  : [c]
+OUT : [d]
+SUCC: [_step3]
+PRED: [_step1]
 
 ===== STEP 3 ===== 
 REF : [d]
@@ -28,7 +28,7 @@ DEF : [e]
 IN  : [d]
 OUT : [e]
 SUCC: [_step4]
-PRED: [_step0, _step1, _step2]
+PRED: [_step2]
 
 ===== STEP 4 ===== 
 REF : [e]
@@ -36,5 +36,5 @@ DEF : [a]
 IN  : [e]
 OUT : []
 SUCC: []
-PRED: [_step0, _step1, _step2, _step3]
+PRED: [_step3]
 

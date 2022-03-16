@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt5.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/megastmt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/megastmt.txt" afterDir="false" />
@@ -228,8 +226,8 @@
         <item itemvalue="JUnit.All in Template" />
         <item itemvalue="JUnit.LifeVariablesTest (4)" />
         <item itemvalue="JUnit.LifeVariablesTest (1)" />
-        <item itemvalue="JUnit.LifeVariablesTest (3)" />
         <item itemvalue="JUnit.LifeVariablesTest" />
+        <item itemvalue="JUnit.LifeVariablesTest (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +246,8 @@
       <workItem from="1647231888489" duration="4595000" />
       <workItem from="1647261947039" duration="15000" />
       <workItem from="1647262919243" duration="8590000" />
-      <workItem from="1647386738793" duration="5485000" />
+      <workItem from="1647386738793" duration="5589000" />
+      <workItem from="1647452197188" duration="3471000" />
     </task>
     <servers />
   </component>
