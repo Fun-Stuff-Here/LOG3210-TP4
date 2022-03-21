@@ -131,10 +131,8 @@ public class LifeVariablesVisitor implements ParserVisitor {
     @Override
     public Object visit(ASTAssignStmt node, Object data) {
         // TODO: vous avez le cas "DEF" ici... conseil: c'est ici qu'il faut faire ça ;)
-        String my_step_id = (String) data;
         this.visit_child_for_def_ref(node,data,0,true);
         this.visit_child_for_def_ref(node,data,1,false);
-        //this.add_succ(my_step_id);
        return null;
     }
 

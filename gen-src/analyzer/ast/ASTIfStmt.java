@@ -20,4 +20,4 @@ class ASTIfStmt extends SimpleNode {
     visitor.visit(this, data);
   }
 }
-/* JavaCC - OriginalChecksum=cded9ab5286307acaa3a96fb41e56a65 (do not edit this line) */
+/* JavaCC - OriginalChecksum=1b601cca45d49dc909f1cffc0a153e62 (do not edit this line) */
