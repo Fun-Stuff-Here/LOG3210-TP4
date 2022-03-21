@@ -20,4 +20,4 @@ class ASTSwitchStmt extends SimpleNode {
     visitor.visit(this, data);
   }
 }
-/* JavaCC - OriginalChecksum=046633e54af73dc2f284909eac3a37fe (do not edit this line) */
+/* JavaCC - OriginalChecksum=f367d6ab21b6190f1d714db11e3b9842 (do not edit this line) */

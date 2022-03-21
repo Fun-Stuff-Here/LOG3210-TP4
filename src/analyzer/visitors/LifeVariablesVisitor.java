@@ -117,8 +117,13 @@ public class LifeVariablesVisitor implements ParserVisitor {
     public Object visit(ASTWhileStmt node, Object data) {
         // TODO: Cas WhileStmt.
         //  Attention au cas de la condition qui est la difficulté ici...
+        String while_start = (String) data;
+        this.visit_child_with_previous(node,data,while_start,1);
+        this.add_succ(while_start);
+        this.add_pred(while_start);
         this.visit_child_for_def_ref(node,data,0,false);
-        node.jjtGetChild(1).jjtAccept(this,data);
+        this.previous_step.clear();
+        this.previous_step.add(while_start);
         return null;
     }
 

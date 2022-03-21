@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c04c410c-8e02-475a-b148-4d86fcd6a08f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTAssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTAssignStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTCaseStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTCaseStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTDefaultStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTDefaultStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTGenValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTGenValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTIfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTIfStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTSwitchStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTSwitchStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTWhileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ASTWhileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/JJTParserState.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/JJTParserState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/JavaCharStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/JavaCharStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ParseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ParseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ParserDefaultVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ParserDefaultVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ParserTreeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ParserTreeConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/ParserVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/ParserVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/SimpleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/SimpleNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen-src/analyzer/ast/TokenMgrError.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen-src/analyzer/ast/TokenMgrError.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/analyzer/visitors/LifeVariablesVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyzer/visitors/LifeVariablesVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/assign4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/ifstmt5.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/megastmt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/megastmt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/whilestmt1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/whilestmt1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/whilestmt2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test-suite/LifeVariablesTest/result/whilestmt2.txt" afterDir="false" />
@@ -65,7 +80,6 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -256,6 +270,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.jjt" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

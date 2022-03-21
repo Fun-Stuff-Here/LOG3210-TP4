@@ -20,4 +20,4 @@ class ASTGenValue extends SimpleNode {
     visitor.visit(this, data);
   }
 }
-/* JavaCC - OriginalChecksum=cefb9078191e258b269baf5a4ad499e1 (do not edit this line) */
+/* JavaCC - OriginalChecksum=d55f914c8f1485a903612d15b1814ab5 (do not edit this line) */

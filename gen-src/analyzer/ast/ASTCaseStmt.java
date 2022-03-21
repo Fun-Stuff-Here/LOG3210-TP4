@@ -20,4 +20,4 @@ class ASTCaseStmt extends SimpleNode {
     visitor.visit(this, data);
   }
 }
-/* JavaCC - OriginalChecksum=3e1069dd4dcef1c4fcbd54160b9988db (do not edit this line) */
+/* JavaCC - OriginalChecksum=c685d014fa26f8766989ff2daf5121aa (do not edit this line) */

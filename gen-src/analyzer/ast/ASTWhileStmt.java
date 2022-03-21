@@ -20,4 +20,4 @@ class ASTWhileStmt extends SimpleNode {
     visitor.visit(this, data);
   }
 }
-/* JavaCC - OriginalChecksum=22784dd2842353b89651e34032e9b025 (do not edit this line) */
+/* JavaCC - OriginalChecksum=c70ba3c94d87d5dfdb10fcbccdb54b5f (do not edit this line) */
